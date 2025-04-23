@@ -70,7 +70,7 @@ Click the CTA button, navigate via the header, interact with the gallery, switch
 Test responsiveness by resizing the browser or using mobile view in developer tools.
 
 # 🎨 Customization
-Images: Replace placeholder URLs (e.g., https://via.placeholder.com) with real images in index.html.
+Images: Replace placeholder URLs (e.g., img/https://via.placeholder.com) with real images in index.html.
 Styling: Modify style.css or Tailwind classes in index.html for custom colors or layouts.
 JavaScript: Extend script.js to add more interactivity (e.g., new events or form fields).
 Content: Update text in index.html to reflect specific services or branding.
@@ -94,18 +94,15 @@ Contributions are welcome! To contribute:
 Fork the repository.
 
 Create a feature branch (git checkout -b feature-name).
-
 Commit changes (git commit -m "Add feature").
 
 Push to the branch (git push origin feature-name).
 Open a pull request.
 
 ## 📜 License
-
 This project is licensed under the MIT License. See LICENSE for details.
 
 # 📬 Contact
-
 For questions or feedback:
 Email: support@techfix.com
 Project Issues: GitHub Issues
