@@ -1,0 +1,28 @@
+<!-- TechFix - Hardware Maintenance & Recycling Landing Page -->
+/* Custom styles for enhanced visuals and animations */
+.gallery-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Smooth transitions for tab content */
+.tab-content {
+  transition: opacity 0.3s ease;
+}
+
+.tab-content.hidden {
+  opacity: 0;
+  display: none;
+}
+
+/* Form input focus style */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
