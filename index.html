@@ -1,83 +1,168 @@
-<!-- TechFix - Hardware Maintenance & Recycling Landing Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechFix offers expert hardware maintenance, repair, and eco-friendly recycling for computers and phones. Contact us today!">
+  <meta name="keywords" content="hardware repair, phone repair, computer maintenance, e-waste recycling, diagnostics">
+  <meta name="author" content="TechFix Team">
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="TechFix - Hardware Maintenance & Recycling">
+  <meta property="og:description" content="Your trusted partner for computer and phone repair, maintenance, and sustainable recycling.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=TechFix+Banner">
+  <meta property="og:url" content="https://techfix.example.com">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TechFix - Hardware Maintenance & Recycling">
+  <meta name="twitter:description" content="Expert repair and recycling services for your devices.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=TechFix+Banner">
   <title>TechFix - Hardware Maintenance & Recycling</title>
   <!-- Tailwind CSS CDN for responsive styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 font-sans">
+  <!-- Sticky Navigation Header -->
+  <nav class="bg-blue-700 text-white fixed top-0 w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold">TechFix</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="nav-link px-3 py-2 rounded-md hover:bg-blue-800">Home</a>
+          <a href="#gallery" class="nav-link px-3 py-2 rounded-md hover:bg-blue-800">Gallery</a>
+          <a href="#services" class="nav-link px-3 py-2 rounded-md hover:bg-blue-800">Services</a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-md hover:bg-blue-800">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <header class="bg-blue-600 text-white py-16 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold">TechFix</h1>
-    <p class="mt-4 text-lg md:text-xl">Your Trusted Partner for Hardware Maintenance & Recycling</p>
-    <button id="ctaButton" class="mt-6 px-6 py-3 bg-yellow-400 text-blue-800 font-semibold rounded-lg hover:bg-yellow-500 transition">Get Started</button>
+  <header id="home" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20 text-center mt-16">
+    <h1 class="text-5xl md:text-6xl font-extrabold">Welcome to TechFix</h1>
+    <p class="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">Expert repair, maintenance, and eco-friendly recycling for your computers and phones.</p>
+    <button id="ctaButton" class="mt-8 px-8 py-4 bg-yellow-400 text-blue-900 font-semibold rounded-full hover:bg-yellow-500 transition transform hover:scale-105">Start Your Repair</button>
   </header>
 
   <!-- Image Gallery Section -->
-  <section class="py-12 px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Work in Action</h2>
-    <div class="flex justify-center space-x-4 overflow-x-auto">
-      <img src="phone.jpg" alt="Repair" class="gallery-img w-64 h-48 object-cover rounded-lg cursor-pointer">
-      <img src="recycle.jpg" alt="Recycling" class="gallery-img w-64 h-48 object-cover rounded-lg cursor-pointer">
-      <img src="computer.jpg" alt="Diagnostics" class="gallery-img w-64 h-48 object-cover rounded-lg cursor-pointer">
+  <section id="gallery" class="py-16 px-4 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-10">Our Work in Action</h2>
+    <div class="flex justify-center space-x-6 overflow-x-auto pb-4">
+      <img src="img/phone.jpg" alt="Phone Repair" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/computer.jpg" alt="Computer Repair" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/phonerepair.avif" alt="Phone Repair" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/recycle.jpg" alt="Recycling" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/motherboard.jpg" alt="Diagnostics" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/virus.jpg" alt="Software Cleaning" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
+      <img src="img/repairservices.jpg" alt="Repair Srvices" class="gallery-img w-72 h-56 object-cover rounded-xl cursor-pointer shadow-md">
     </div>
-    <p id="galleryCaption" class="text-center mt-4 text-lg">Click an image to view details</p>
+    <p id="galleryCaption" class="text-center mt-6 text-lg font-medium text-gray-700">Click an image to explore our processes</p>
   </section>
 
-  <!-- Tabs Section -->
-  <section class="py-12 px-4 bg-white">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
-    <div class="flex justify-center space-x-4 mb-6">
-      <button class="tab-button px-4 py-2 bg-blue-600 text-white rounded-lg" data-tab="repair">Repair</button>
-      <button class="tab-button px-4 py-2 bg-gray-300 text-gray-800 rounded-lg" data-tab="recycling">Recycling</button>
-      <button class="tab-button px-4 py-2 bg-gray-300 text-gray-800 rounded-lg" data-tab="diagnostics">Diagnostics</button>
+  <!-- Enhanced Tabs Section -->
+  <section id="services" class="py-16 px-4 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Expert Services</h2>
+    <div class="flex justify-center space-x-6 mb-8">
+      <button class="tab-button px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700" data-tab="repair">Repair</button>
+      <button class="tab-button px-6 py-3 bg-gray-300 text-gray-800 rounded-lg shadow-md hover:bg-gray-400" data-tab="recycling">Recycling</button>
+      <button class="tab-button px-6 py-3 bg-gray-300 text-gray-800 rounded-lg shadow-md hover:bg-gray-400" data-tab="diagnostics">Diagnostics</button>
     </div>
-    <div id="tabContent" class="max-w-2xl mx-auto">
-      <div id="repair" class="tab-content">
-        <h3 class="text-2xl font-semibold">Hardware Repair</h3>
-        <p>We fix computers, phones, and more with precision and care.</p>
+    <div id="tabContent" class="max-w-5xl mx-auto">
+      <div id="repair" class="tab-content bg-white rounded-xl shadow-lg p-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <img src="img/repairservices.jpg" alt="Repair Service" class="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6">
+          <div>
+            <h3 class="text-3xl font-semibold text-blue-600">Precision Hardware Repair</h3>
+            <p class="mt-4 text-gray-600">Our certified technicians restore your computers, phones, and tablets to peak performance. From cracked screens to faulty motherboards, we handle it all with care and expertise.</p>
+            <ul class="mt-4 list-disc list-inside text-gray-600">
+              <li>Screen replacements</li>
+              <li>Battery upgrades</li>
+              <li>Component repairs</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div id="recycling" class="tab-content hidden">
-        <h3 class="text-2xl font-semibold">E-Waste Recycling</h3>
-        <p>Responsibly recycle your old devices with our eco-friendly process.</p>
+      <div id="recycling" class="tab-content bg-white rounded-xl shadow-lg p-8 hidden">
+        <div class="flex flex-col md:flex-row items-center">
+          <img src="img/recycle.jpg" alt="Recycling Process" class="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6">
+          <div>
+            <h3 class="text-3xl font-semibold text-blue-600">Eco-Friendly Recycling</h3>
+            <p class="mt-4 text-gray-600">Responsibly dispose of your old electronics with our sustainable recycling program. We ensure safe dismantling and material recovery to protect the environment.</p>
+            <ul class="mt-4 list-disc list-inside text-gray-600">
+              <li>Certified e-waste processing</li>
+              <li>Data destruction services</li>
+              <li>Material repurposing</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div id="diagnostics" class="tab-content hidden">
-        <h3 class="text-2xl font-semibold">Diagnostics</h3>
-        <p>Identify issues quickly with our advanced diagnostic tools.</p>
+      <div id="diagnostics" class="tab-content bg-white rounded-xl shadow-lg p-8 hidden  hidden">
+        <div class="flex flex-col md:flex-row items-center">
+          <img src="img/motherboard.jpg" alt="Diagnostics Lab" class="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6">
+          <div>
+            <h3 class="text-3xl font-semibold text-blue-600">Advanced Diagnostics</h3>
+            <p class="mt-4 text-gray-600">Pinpoint issues with our state-of-the-art diagnostic tools. We identify hardware and software problems quickly, saving you time and money.</p>
+            <ul class="mt-4 list-disc list-inside text-gray-600">
+              <li>Comprehensive system scans</li>
+              <li>Performance optimization</li>
+              <li>Issue reporting</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Form Section -->
-  <section class="py-12 px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-    <form id="contactForm" class="max-w-lg mx-auto space-y-4">
+  <section id="contact" class="py-16 px-4 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+    <form id="contactForm" class="max-w-lg mx-auto space-y-6">
       <div>
-        <label for="name" class="block text-sm font-medium">Name</label>
-        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg" required>
-        <p id="nameError" class="text-red-500 text-sm hidden">Name is required</p>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+        <p id="nameError" class="text-red-500 text-sm hidden mt-1">Name is required</p>
       </div>
       <div>
-        <label for="email" class="block text-sm font-medium">Email</label>
-        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg" required>
-        <p id="emailError" class="text-red-500 text-sm hidden">Please enter a valid email</p>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+        <p id="emailError" class="text-red-500 text-sm hidden mt-1">Please enter a valid email</p>
       </div>
       <div>
-        <label for="password" class="block text-sm font-medium">Password</label>
-        <input type="password" id="password" class="w-full px-4 py-2 border rounded-lg" required>
-        <p id="passwordError" class="text-red-500 text-sm hidden">Password must be at least 8 characters</p>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+        <p id="passwordError" class="text-red-500 text-sm hidden mt-1">Password must be at least 8 characters</p>
       </div>
-      <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">Submit</button>
+      <button type="submit" class="w-full px-6 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">Submit Inquiry</button>
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 TechFix. All rights reserved.</p>
+  <!-- Enhanced Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold">TechFix</h3>
+        <p class="mt-4 text-gray-400">Your trusted partner for hardware repair and recycling since 2020.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold">Contact Us</h3>
+        <p class="mt-4 text-gray-400">Email: support@techfix.com</p>
+        <p class="text-gray-400">Phone: (123) 456-7890</p>
+        <p class="text-gray-400">Address: 123 Tech Lane, Silicon City</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold">Stay Connected</h3>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.708.859 3.216 2.164 4.104-.797-.026-1.546-.247-2.2-.616v.062c0 2.385 1.698 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.316 0-.624-.031-.925-.089.626 1.956 2.444 3.379 4.6 3.419-1.685 1.326-3.808 2.118-6.115 2.118-.397 0-.79-.023-1.175-.067 2.179 1.396 4.768 2.212 7.557 2.212 9.054 0 14.002-7.496 14.002-13.986 0-.213-.005-.426-.015-.637.961-.689 1.797-1.562 2.457-2.549z"/></svg></a>
+          <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.994h-2.54v-2.885h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.467h-1.264c-1.245 0-1.628.772-1.628 1.563v1.868h2.773l-.443 2.885h-2.33v6.994C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+      <p class="text-gray-400">&copy; 2025 TechFix. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
